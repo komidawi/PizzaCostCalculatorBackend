@@ -1,10 +1,11 @@
-name: Verify
+name: Master
 
 on:
-  pull_request:
+  push:
+    branches: [ "master" ]
 
 jobs:
-  run-tests:
+  build-with-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +20,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Run tests with Gradle
+      - name: Build with Gradle
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: test
+          arguments: build
