@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
 @SpringBootTest(webEnvironment = RANDOM_PORT)
-public class SampleRestApiTest {
+public class BusinessRestApiControllerTest {
 
     @LocalServerPort
     private int port;
@@ -21,7 +21,7 @@ public class SampleRestApiTest {
     @Test
     public void whenVisitingHelloWorldPage_returnHelloWorld() {
         // given
-        String url = "http://localhost:" + port + "/sample/hello";
+        String url = "http://localhost:" + port + "/hello";
 
         // when
         String responseBody = testRestTemplate.getForObject(url, String.class);

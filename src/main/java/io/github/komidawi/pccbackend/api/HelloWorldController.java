@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/sample")
-public class SampleRestApi {
+@RequestMapping("/")
+class HelloWorldController {
 
     @GetMapping("/hello")
     public String helloWorld() {
