@@ -40,6 +40,7 @@ tasks.withType<Test> {
 
 idea {
 	module {
-		testSources.from(sourceSets["integration"].java.srcDirs)
+		testSourceDirs.plusAssign(sourceSets["integration"].java.srcDirs)
+		testResourceDirs.plusAssign(sourceSets["integration"].resources.srcDirs)
 	}
 }
