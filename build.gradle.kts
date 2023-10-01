@@ -1,8 +1,11 @@
 plugins {
 	java
 	war
+	idea
+
 	id("org.springframework.boot") version "3.1.2"
 	id("io.spring.dependency-management") version "1.1.2"
+
 	id("com.coditory.integration-test") version "1.4.5"
 }
 
