@@ -1,4 +1,4 @@
-package io.github.komidawi.pccbackend;
+package io.github.komidawi.pccbackend.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

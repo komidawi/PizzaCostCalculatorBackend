@@ -1,4 +1,4 @@
-package io.github.komidawi.pccbackend.api;
+package io.github.komidawi.pccbackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
