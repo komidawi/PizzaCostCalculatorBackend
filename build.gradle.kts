@@ -37,3 +37,9 @@ dependencies {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+idea {
+	module {
+		testSources.from(sourceSets["integration"].java.srcDirs)
+	}
+}
